@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Family itinerary for the Whitefish, Montana trip, Aug 10-17 2026.">
+<title>Whitefish Trip &middot; Aug 10&ndash;17</title>
+<style>
+  :root {
+    --ground: #f4f2ec;
+    --surface: #fffdf8;
+    --surface-2: #efece3;
+    --ink: #1c2a24;
+    --ink-soft: #5a675f;
+    --ink-faint: #8b968d;
+    --line: #e4ded2;
+    --pine: #2f6b53;
+    --pine-soft: #e3efe8;
+    --on-pine: #ffffff;
+    --lake: #2b7c8f;
+    --larch: #a9691f;
+    --larch-soft: #f5ead6;
+    --sitter: #7a5aa6;
+    --sitter-soft: #ece5f5;
+    --danger: #a63d31;
+    --shadow: 0 1px 2px rgba(28,42,36,.05), 0 8px 24px -12px rgba(28,42,36,.18);
+    --font-display: "Iowan Old Style", "Hoefler Text", Georgia, "Times New Roman", serif;
+    --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0f1815; --surface: #17221d; --surface-2: #1e2b24; --ink: #edf1ea;
+      --ink-soft: #a4b1a7; --ink-faint: #6f7d73; --line: #27342c; --pine: #6cc39c;
+      --pine-soft: #1c3128; --on-pine: #0f1815; --lake: #5cbccd; --larch: #e0a552;
+      --larch-soft: #33281a; --sitter: #b79ae0; --sitter-soft: #271f36; --danger: #e8877a;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 28px -14px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="light"] {
+    --ground: #f4f2ec; --surface: #fffdf8; --surface-2: #efece3; --ink: #1c2a24;
+    --ink-soft: #5a675f; --ink-faint: #8b968d; --line: #e4ded2; --pine: #2f6b53;
+    --pine-soft: #e3efe8; --on-pine: #ffffff; --lake: #2b7c8f; --larch: #a9691f;
+    --larch-soft: #f5ead6; --sitter: #7a5aa6; --sitter-soft: #ece5f5; --danger: #a63d31;
+    --shadow: 0 1px 2px rgba(28,42,36,.05), 0 8px 24px -12px rgba(28,42,36,.18);
+  }
+  :root[data-theme="dark"] {
+    --ground: #0f1815; --surface: #17221d; --surface-2: #1e2b24; --ink: #edf1ea;
+    --ink-soft: #a4b1a7; --ink-faint: #6f7d73; --line: #27342c; --pine: #6cc39c;
+    --pine-soft: #1c3128; --on-pine: #0f1815; --lake: #5cbccd; --larch: #e0a552;
+    --larch-soft: #33281a; --sitter: #b79ae0; --sitter-soft: #271f36; --danger: #e8877a;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 28px -14px rgba(0,0,0,.6);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: var(--font-ui); line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 18px 80px; }
+  button { font-family: inherit; }
+  [hidden] { display: none !important; }
+  :focus-visible { outline: 2px solid var(--lake); outline-offset: 2px; }
+
+  /* ---------- Hero ---------- */
+  .hero { position: relative; padding: 44px 0 26px; text-align: center; overflow: hidden; }
+  .ridge { position: absolute; inset: auto 0 0 0; height: 88px; width: 100%; opacity: .5; pointer-events: none; z-index: 0; }
+  @media (prefers-color-scheme: dark){ .ridge { opacity: .35; } }
+  :root[data-theme="dark"] .ridge { opacity: .35; }
+  :root[data-theme="light"] .ridge { opacity: .5; }
+  .hero > * { position: relative; z-index: 1; }
+  .eyebrow { font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--pine); font-weight: 600; margin: 0 0 10px; }
+  h1 { font-family: var(--font-display); font-weight: 600; font-size: clamp(38px, 11vw, 62px); line-height: .98; margin: 0; letter-spacing: -.01em; text-wrap: balance; }
+  h1 em { font-style: italic; color: var(--pine); }
+  .sub { margin: 12px 0 0; color: var(--ink-soft); font-size: 15px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; align-items: center; }
+  .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--ink-faint); }
+  .countdown { margin: 22px auto 0; display: inline-flex; align-items: center; gap: 10px; background: var(--pine); color: var(--on-pine); padding: 9px 18px; border-radius: 999px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow); }
+  .countdown b { font-variant-numeric: tabular-nums; }
+
+  .note { display: flex; gap: 10px; align-items: flex-start; background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 11px 14px; margin: 22px 0 0; font-size: 13.5px; color: var(--ink-soft); }
+  .note svg { flex: none; margin-top: 2px; color: var(--pine); }
+
+  /* ---------- Filter ---------- */
+  .filter { margin: 26px 0 4px; }
+  .filter-lbl { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-faint); font-weight: 600; margin: 0 0 10px; }
+  .chips-row { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .chips-row::-webkit-scrollbar { display: none; }
+  .pfilter { flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft); border-radius: 999px; padding: 7px 14px; font-size: 14px; cursor: pointer; white-space: nowrap; transition: background .15s, color .15s, border-color .15s; }
+  .pfilter:hover { border-color: var(--pine); color: var(--ink); }
+  .pfilter.active { background: var(--pine); color: var(--on-pine); border-color: var(--pine); }
+  .filter-status { font-size: 13px; color: var(--ink-soft); margin: 10px 2px 0; min-height: 18px; }
+  .filter-status b { color: var(--pine); font-variant-numeric: tabular-nums; }
+
+  /* ---------- Toolbar ---------- */
+  .toolbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--line); }
+  .btn { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 9px; padding: 8px 14px; font-size: 14px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; transition: border-color .15s, background .15s, color .15s; }
+  .btn:hover { border-color: var(--pine); }
+  .btn.primary { background: var(--pine); color: var(--on-pine); border-color: var(--pine); }
+  .btn.ghost { background: transparent; color: var(--ink-soft); }
+  .btn.danger { color: var(--danger); }
+  .btn.sm { padding: 5px 10px; font-size: 13px; font-weight: 500; border-radius: 7px; }
+  .edits-count { font-size: 13px; color: var(--ink-soft); margin-left: auto; }
+  .edits-count b { color: var(--pine); font-variant-numeric: tabular-nums; }
+  .storage-warn { font-size: 12.5px; color: var(--larch); margin: 8px 2px 0; }
+
+  /* ---------- Day nav ---------- */
+  .daynav { position: sticky; top: 0; z-index: 20; margin: 16px -18px 0; padding: 10px 18px; background: color-mix(in srgb, var(--ground) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .daynav .chips-row { padding-bottom: 0; }
+  .dchip { flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft); border-radius: 10px; padding: 6px 11px; cursor: pointer; font-size: 13px; text-align: center; line-height: 1.25; transition: border-color .15s, background .15s; }
+  .dchip .dow { font-weight: 600; color: var(--ink); display: block; }
+  .dchip .dnum { font-size: 11px; font-variant-numeric: tabular-nums; }
+  .dchip:hover { border-color: var(--pine); }
+  .dchip.today { border-color: var(--pine); background: var(--pine-soft); }
+  .dchip.today .dow { color: var(--pine); }
+
+  /* ---------- Days & cards ---------- */
+  .day { padding-top: 30px; scroll-margin-top: 74px; }
+  .day-head { display: flex; align-items: baseline; gap: 12px; margin: 0 0 4px; }
+  .day-date { font-family: var(--font-display); font-size: 26px; font-weight: 600; margin: 0; letter-spacing: -.01em; }
+  .day-dow { font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--pine); font-weight: 600; }
+  .day-tag { margin-left: auto; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); font-weight: 600; align-self: center; }
+  .day-rule { height: 1px; background: var(--line); margin: 10px 0 16px; }
+
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 15px 16px; margin: 0 0 12px; box-shadow: var(--shadow); border-left: 3px solid var(--line); transition: opacity .2s, border-color .2s; position: relative; }
+  .card.mine { border-left-color: var(--pine); }
+  .card.dimmed { opacity: .38; }
+  .card.travel { background: var(--surface-2); box-shadow: none; }
+  .card.custom { border-left-color: var(--lake); border-left-style: solid; }
+  .card.removed { opacity: .5; background: var(--surface-2); box-shadow: none; border-style: dashed; }
+  .card.removed .card-top { text-decoration: line-through; text-decoration-color: var(--ink-faint); }
+
+  .card-top { display: flex; align-items: flex-start; gap: 12px; }
+  .time { flex: none; font-size: 12.5px; font-weight: 700; color: var(--ink); background: var(--surface-2); border-radius: 7px; padding: 4px 8px; font-variant-numeric: tabular-nums; min-width: 62px; text-align: center; margin-top: 1px; }
+  .card.mine .time { background: var(--pine-soft); color: var(--pine); }
+  .title-line { flex: 1; min-width: 0; }
+  .act-title { font-size: 17px; font-weight: 650; margin: 0; letter-spacing: -.005em; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .badge { font-size: 10.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 7px; border-radius: 5px; white-space: nowrap; }
+  .badge.booked { background: var(--larch-soft); color: var(--larch); }
+  .badge.optional { background: transparent; color: var(--lake); border: 1px solid var(--lake); }
+  .badge.added { background: transparent; color: var(--lake); border: 1px dashed var(--lake); }
+  .act-meta { font-size: 13px; color: var(--ink-soft); margin: 4px 0 0; }
+
+  .people { display: flex; flex-wrap: wrap; gap: 5px; margin: 10px 0 0; }
+  .p { font-size: 12.5px; padding: 2px 9px; border-radius: 999px; background: var(--surface-2); color: var(--ink-soft); white-space: nowrap; }
+  .p.kid { color: var(--lake); }
+  .p.me { background: var(--pine); color: var(--on-pine); font-weight: 600; }
+  .p.everyone { background: var(--pine-soft); color: var(--pine); font-weight: 600; }
+
+  .sitters { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; margin: 11px 0 0; padding-top: 11px; border-top: 1px dashed var(--line); font-size: 12.5px; color: var(--ink-soft); }
+  .sitters .stag { font-size: 10.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--sitter); background: var(--sitter-soft); padding: 2px 7px; border-radius: 5px; }
+  .sitters .sname { color: var(--ink); font-weight: 600; }
+  .sitters .sname.me { color: var(--sitter); }
+
+  .sub-act { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .card-actions { display: flex; gap: 8px; margin: 12px 0 0; padding-top: 11px; border-top: 1px solid var(--line); }
+
+  .add-row { margin: 0 0 12px; }
+  .add-btn { width: 100%; border: 1px dashed var(--line); background: transparent; color: var(--ink-soft); border-radius: 12px; padding: 11px; font-size: 14px; cursor: pointer; transition: border-color .15s, color .15s; }
+  .add-btn:hover { border-color: var(--pine); color: var(--pine); }
+
+  /* ---------- Form ---------- */
+  .form { background: var(--surface); border: 1px solid var(--pine); border-radius: 14px; padding: 16px; margin: 0 0 12px; box-shadow: var(--shadow); }
+  .form h3 { margin: 0 0 14px; font-size: 15px; font-family: var(--font-display); font-weight: 600; }
+  .field { margin: 0 0 13px; }
+  .field label { display: block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); font-weight: 600; margin: 0 0 6px; }
+  .field input[type="text"] {
+    width: 100%; padding: 9px 11px; border: 1px solid var(--line); border-radius: 9px;
+    background: var(--ground); color: var(--ink); font-size: 15px; font-family: inherit;
+  }
+  .field input::placeholder { color: var(--ink-faint); }
+  .picker { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tog { border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft); border-radius: 999px; padding: 5px 11px; font-size: 13px; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+  .tog:hover { border-color: var(--pine); }
+  .tog[aria-pressed="true"] { background: var(--pine); color: var(--on-pine); border-color: var(--pine); }
+  .tog.sit[aria-pressed="true"] { background: var(--sitter); color: #fff; border-color: var(--sitter); }
+  .tog.stat[aria-pressed="true"] { background: var(--larch); color: #fff; border-color: var(--larch); }
+  .form-actions { display: flex; gap: 9px; margin-top: 16px; }
+  .form-err { color: var(--danger); font-size: 13px; margin: 10px 0 0; }
+
+  footer { text-align: center; color: var(--ink-faint); font-size: 12.5px; margin-top: 44px; line-height: 1.7; }
+  footer a { color: var(--pine); text-decoration: none; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <svg class="ridge" viewBox="0 0 680 88" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,88 L0,52 L70,20 L120,44 L180,8 L240,40 L300,18 L360,46 L420,14 L480,42 L540,22 L600,48 L660,26 L680,40 L680,88 Z" fill="var(--pine)"/>
+    </svg>
+    <p class="eyebrow">Whitefish &middot; Montana</p>
+    <h1>The <em>Whitefish</em> Trip</h1>
+    <p class="sub">
+      <span>Aug 10 &ndash; 17, 2026</span><span class="dot"></span>
+      <span>8 days</span><span class="dot"></span>
+      <span>13 of us</span>
+    </p>
+    <div class="countdown" id="countdown">Loading&hellip;</div>
+    <div class="note">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="5" r="2"/><path d="M12 8v6m0 0-4 5m4-5 4 5m-8-9 4 2 4-2"/></svg>
+      <span><strong>Yoga</strong> is offered at 9am most mornings &mdash; free for all guests.</span>
+    </div>
+  </header>
+
+  <section class="filter">
+    <p class="filter-lbl">Who are you? Tap your name to see just your plans</p>
+    <div class="chips-row" id="pfilters"></div>
+    <p class="filter-status" id="fstatus"></p>
+  </section>
+
+  <div class="toolbar">
+    <button class="btn" id="editToggle" aria-pressed="false">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      Edit itinerary
+    </button>
+    <button class="btn ghost danger sm" id="resetBtn" hidden>Reset to original</button>
+    <span class="edits-count" id="editsCount"></span>
+  </div>
+  <p class="storage-warn" id="storageWarn" hidden></p>
+
+  <nav class="daynav"><div class="chips-row" id="daynav"></div></nav>
+
+  <main id="days"></main>
+
+  <footer>
+    Family trip itinerary<br>
+    Your added and removed events are saved on this device only.
+  </footer>
+</div>
+
+<script>
+const PEOPLE = {
+  j:{n:"J"}, dan:{n:"Dan"}, ee:{n:"EE"}, ab:{n:"AB"},
+  leeks:{n:"Leeks"}, t:{n:"T"}, noy:{n:"Noy"}, max:{n:"Max"},
+  an:{n:"An.",kid:1}, lu:{n:"Lu.",kid:1}, mi:{n:"Mi.",kid:1},
+  sh:{n:"Sh.",kid:1}, aj:{n:"Aj.",kid:1}
+};
+const ALL = Object.keys(PEOPLE);
+
+const DAYS = [
+  { dow:"Mon", date:"Aug 10", iso:"2026-08-10", tag:"Travel Day",
+    acts:[
+      { time:"All day", title:"Travel Day", everyone:true, travel:true,
+        meta:"M&M and A&S arrive 3pm \u00b7 J/T/A/L/M arrive 11am \u00b7 Ba/EE 11:30." },
+      { time:"5:00 PM", title:"Dinner at Boat Cl", everyone:true, meta:"Dan has the details" }
+    ] },
+
+  { dow:"Tue", date:"Aug 11", iso:"2026-08-11",
+    acts:[
+      { time:"9:00 AM", title:"Wake Surfing", booked:true,
+        people:["j","dan","ee","ab","t","noy","max","an","lu","mi","sh","aj"] },
+      { time:"PM", title:"Mountain Biking",
+        people:["dan","ab","leeks","t","noy","max","an"],
+        sitters:["j","ee"], sitterNote:"Noy can babysit too" },
+      { time:"5\u20137 PM", title:"Whitefish Farmers Market", optional:true, everyone:true,
+        meta:"whitefishfarmersmarket.org" },
+      { time:"Evening", title:"Chef Dinner", everyone:true, meta:"Organized by Dan" }
+    ] },
+
+  { dow:"Wed", date:"Aug 12", iso:"2026-08-12",
+    acts:[
+      { time:"AM", title:"Glacier Day Trip & Hiking", everyone:true,
+        meta:"Avalanche Lake trailhead \u2014 6 mi out & back, mostly flat, 1h20m drive. Stop at Lake McDonald on the way in." },
+      { time:"Evening", title:"Chef Dinner", everyone:true, meta:"Organized by Dan" }
+    ] },
+
+  { dow:"Thu", date:"Aug 13", iso:"2026-08-13",
+    acts:[
+      { time:"9\u201311 AM", title:"Tennis", booked:true, meta:"Riverside Tenn",
+        people:["j","leeks","t","max","an"],
+        sub:[{ label:"Off-campus pickle", people:["ab","sh"] }],
+        sitters:["dan","ee","noy"] },
+      { time:"12:00 PM", title:"Fishing", booked:true, meta:"2 boats",
+        people:["j","dan","ee","ab","t","noy","max","lu","mi","sh","aj"] },
+      { time:"5:30 PM", title:"Dinner at H&O", meta:"Adults only",
+        people:["ab","noy","ee","dan","j","t","max","leeks"],
+        sitters:["an"] }
+    ] },
+
+  { dow:"Fri", date:"Aug 14", iso:"2026-08-14",
+    acts:[
+      { time:"AM", title:"Off-Campus Pickle",
+        people:["j","ab","t","noy","max","an","leeks","sh"],
+        sitters:["dan","ee"] },
+      { time:"1:00 PM", title:"Massages", booked:true,
+        meta:"1pm \u2014 AB, EE, Dan, T \u00b7 2:30pm \u2014 Noy, Leeks (80 min each)",
+        people:["ab","ee","dan","t","noy","leeks"],
+        sitterNote:"Adults take turns babysitting" },
+      { time:"Evening", title:"Chef Dinner", everyone:true, meta:"Organized by Dan" },
+      { time:"9:30 PM", title:"Logan Pass Star Party", optional:true, everyone:true, meta:"~2 hr drive" }
+    ] },
+
+  { dow:"Sat", date:"Aug 15", iso:"2026-08-15",
+    acts:[
+      { time:"9:30 AM", title:"Zipline", booked:true, people:["t","an"] },
+      { time:"AM", title:"Alpine Slide", meta:"Buy 25 ride passes for the week \u00b7 kids free with an adult",
+        people:["j","ab","t","noy","max","an","lu","mi","sh","aj"],
+        sitters:["dan","ee"] },
+      { time:"PM", title:"Golf", people:["j","t","max","an"] },
+      { time:"4:00 PM", title:"Massage", booked:true, meta:"80 min", people:["j"] },
+      { time:"Departure", title:"Max & Leeks head home", travel:true, people:["max","leeks"] }
+    ] },
+
+  { dow:"Sun", date:"Aug 16", iso:"2026-08-16",
+    acts:[
+      { time:"PM", title:"Pedicures & Manicures",
+        people:["j","t","noy","lu","mi","aj"],
+        sitters:["dan","ee","ab"] }
+    ] },
+
+  { dow:"Mon", date:"Aug 17", iso:"2026-08-17", tag:"Travel Day",
+    acts:[ { time:"All day", title:"Travel Day", everyone:true, travel:true } ] }
+];
+
+/* ---------- state ---------- */
+const STORE_KEY = "whitefish-trip-edits-v1";
+let selected = null;
+let editMode = false;
+let openForm = null;          // day index whose add-form is open
+let formDraft = null;         // {title,time,meta,people:Set,sitters:Set,status}
+let storageOK = true;
+let state = { removed: [], added: [] };
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const baseId = (iso, title) => "b:" + iso + ":" + title;
+
+function load(){
+  try {
+    const raw = localStorage.getItem(STORE_KEY);
+    if(raw){
+      const p = JSON.parse(raw);
+      if(p && Array.isArray(p.removed) && Array.isArray(p.added)) state = p;
+    }
+  } catch(e){ storageOK = false; }
+}
+function save(){
+  if(!storageOK) return;
+  try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); }
+  catch(e){ storageOK = false; renderStorageWarn(); }
+}
+function renderStorageWarn(){
+  const el = $("#storageWarn");
+  el.hidden = storageOK;
+  if(!storageOK) el.textContent = "Heads up: this browser won't let the page save, so your changes will disappear when you close the tab.";
+}
+
+/* ---------- model helpers ---------- */
+function actsForDay(di){
+  const d = DAYS[di];
+  const base = d.acts.map((a,ai) => Object.assign({}, a, { _id: baseId(d.iso, a.title), _base:true }));
+  const mine = state.added.filter(a => a.dayIso === d.iso).map(a => Object.assign({}, a, { _base:false }));
+  return base.concat(mine);
+}
+function isRemoved(id){ return state.removed.indexOf(id) !== -1; }
+function actPeople(a){
+  if(a.everyone) return ALL;
+  const set = new Set(a.people || []);
+  (a.sub || []).forEach(s => (s.people||[]).forEach(p => set.add(p)));
+  return [...set];
+}
+function actInvolves(a, id){
+  return actPeople(a).indexOf(id) !== -1 || (a.sitters||[]).indexOf(id) !== -1;
+}
+function editCount(){ return state.removed.length + state.added.length; }
+
+/* ---------- rendering ---------- */
+function personChip(id){
+  const p = PEOPLE[id];
+  if(!p) return "";
+  const me = selected && id === selected;
+  return `<span class="p${p.kid?" kid":""}${me?" me":""}">${esc(p.n)}</span>`;
+}
+
+function cardHTML(a){
+  const removed = isRemoved(a._id);
+  const mine = selected ? actInvolves(a, selected) : false;
+  const cls = ["card"];
+  if(a.travel) cls.push("travel");
+  if(!a._base) cls.push("custom");
+  if(removed) cls.push("removed");
+  else if(selected){ cls.push(mine ? "mine" : "dimmed"); }
+
+  const badges =
+    (a.booked ? '<span class="badge booked">Booked</span>' : '') +
+    (a.optional ? '<span class="badge optional">Optional</span>' : '') +
+    (!a._base ? '<span class="badge added">Added</span>' : '');
+
+  let peopleHtml = "";
+  if(a.everyone) peopleHtml = `<div class="people"><span class="p everyone">Everyone</span></div>`;
+  else if(a.people && a.people.length) peopleHtml = `<div class="people">${a.people.map(personChip).join("")}</div>`;
+
+  let subHtml = "";
+  (a.sub||[]).forEach(s => {
+    subHtml += `<div class="sub-act"><p class="act-meta" style="margin:0 0 6px;font-weight:600;color:var(--ink)">${esc(s.label)}</p>
+      <div class="people">${s.people.map(personChip).join("")}</div></div>`;
+  });
+
+  let sitHtml = "";
+  if((a.sitters && a.sitters.length) || a.sitterNote){
+    const names = (a.sitters||[]).map(id =>
+      `<span class="sname${selected===id?" me":""}">${esc(PEOPLE[id] ? PEOPLE[id].n : id)}</span>`).join(", ");
+    sitHtml = `<div class="sitters"><span class="stag">Babysitting</span>${names}${a.sitterNote?`<span>${names?" &middot; ":""}${esc(a.sitterNote)}</span>`:""}</div>`;
+  }
+
+  let actions = "";
+  if(editMode){
+    actions = removed
+      ? `<div class="card-actions"><button class="btn sm" data-restore="${esc(a._id)}">Put it back</button></div>`
+      : `<div class="card-actions"><button class="btn ghost danger sm" data-remove="${esc(a._id)}">Remove</button></div>`;
+  }
+
+  return `<article class="${cls.join(" ")}">
+    <div class="card-top">
+      <span class="time">${esc(a.time || "\u2014")}</span>
+      <div class="title-line">
+        <p class="act-title">${esc(a.title)}${badges}</p>
+        ${a.meta?`<p class="act-meta">${esc(a.meta)}</p>`:""}
+        ${peopleHtml}${subHtml}
+      </div>
+    </div>${sitHtml}${actions}</article>`;
+}
+
+function formHTML(di){
+  const d = formDraft;
+  const pick = (set, cls, id) =>
+    ALL.map(p => `<button type="button" class="tog ${cls}" data-${id}="${p}" aria-pressed="${set.has(p)?"true":"false"}">${esc(PEOPLE[p].n)}</button>`).join("");
+  return `<div class="form">
+    <h3>New event &middot; ${esc(DAYS[di].dow)}, ${esc(DAYS[di].date)}</h3>
+    <div class="field">
+      <label for="f-title">What is it?</label>
+      <input type="text" id="f-title" value="${esc(d.title)}" placeholder="Dinner at the lake" autocomplete="off">
+    </div>
+    <div class="field">
+      <label for="f-time">When</label>
+      <input type="text" id="f-time" value="${esc(d.time)}" placeholder="7:00 PM, or AM / PM / All day" autocomplete="off">
+    </div>
+    <div class="field">
+      <label>Who's going</label>
+      <div class="picker">
+        <button type="button" class="tog" data-everyone="1" aria-pressed="${d.everyone?"true":"false"}">Everyone</button>
+        ${pick(d.people, "", "person")}
+      </div>
+    </div>
+    <div class="field">
+      <label>Babysitting (optional)</label>
+      <div class="picker">${pick(d.sitters, "sit", "sitter")}</div>
+    </div>
+    <div class="field">
+      <label>Status</label>
+      <div class="picker">
+        <button type="button" class="tog stat" data-status="booked" aria-pressed="${d.status==="booked"?"true":"false"}">Booked</button>
+        <button type="button" class="tog stat" data-status="optional" aria-pressed="${d.status==="optional"?"true":"false"}">Optional</button>
+      </div>
+    </div>
+    <div class="field">
+      <label for="f-meta">Notes (optional)</label>
+      <input type="text" id="f-meta" value="${esc(d.meta)}" placeholder="Address, who's driving, what to bring&hellip;" autocomplete="off">
+    </div>
+    ${d.err?`<p class="form-err">${esc(d.err)}</p>`:""}
+    <div class="form-actions">
+      <button class="btn primary" data-save="${di}">Add to ${esc(DAYS[di].date)}</button>
+      <button class="btn ghost" data-cancel="1">Cancel</button>
+    </div>
+  </div>`;
+}
+
+function render(){
+  const box = $("#days");
+  let count = 0;
+  box.innerHTML = DAYS.map((d, di) => {
+    const acts = actsForDay(di);
+    const cards = acts.map(a => {
+      if(!isRemoved(a._id) && selected && actInvolves(a, selected)) count++;
+      if(isRemoved(a._id) && !editMode) return "";
+      return cardHTML(a);
+    }).join("");
+    const addUI = editMode
+      ? (openForm === di
+          ? formHTML(di)
+          : `<div class="add-row"><button class="add-btn" data-add="${di}">+ Add an event on ${esc(d.date)}</button></div>`)
+      : "";
+    return `<section class="day" id="day-${di}">
+      <div class="day-head">
+        <span class="day-dow">${esc(d.dow)}</span>
+        <h2 class="day-date">${esc(d.date)}</h2>
+        ${d.tag?`<span class="day-tag">${esc(d.tag)}</span>`:""}
+      </div>
+      <div class="day-rule"></div>
+      ${cards}${addUI}
+    </section>`;
+  }).join("");
+
+  const fs = $("#fstatus");
+  fs.innerHTML = selected
+    ? `<b>${esc(PEOPLE[selected].n)}</b> &mdash; highlighting <b>${count}</b> ${count===1?"plan":"plans"} across the week. Everything else is dimmed.`
+    : "";
+
+  const n = editCount();
+  $("#editsCount").innerHTML = n ? `<b>${n}</b> ${n===1?"change":"changes"} saved on this device` : "";
+  $("#resetBtn").hidden = n === 0;
+  markToday();
+}
+
+function renderFilters(){
+  const box = $("#pfilters");
+  const mk = (id, label) => {
+    const b = document.createElement("button");
+    b.className = "pfilter"; b.textContent = label; b.dataset.id = id;
+    b.setAttribute("aria-pressed", "false");
+    b.onclick = () => {
+      selected = (selected === id) ? null : (id === "__all" ? null : id);
+      document.querySelectorAll(".pfilter").forEach(x => {
+        const on = x.dataset.id === selected || (!selected && x.dataset.id === "__all");
+        x.classList.toggle("active", on);
+        x.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      render();
+    };
+    return b;
+  };
+  box.appendChild(mk("__all", "Everyone"));
+  ALL.forEach(id => box.appendChild(mk(id, PEOPLE[id].n)));
+  box.firstChild.classList.add("active");
+}
+
+function renderDayNav(){
+  const box = $("#daynav");
+  DAYS.forEach((d, i) => {
+    const b = document.createElement("button");
+    b.className = "dchip"; b.dataset.day = i;
+    b.innerHTML = `<span class="dow">${d.dow}</span><span class="dnum">${d.date.replace("Aug ", "")}</span>`;
+    b.onclick = () => document.getElementById("day-" + i).scrollIntoView({ block: "start" });
+    box.appendChild(b);
+  });
+}
+
+function markToday(){
+  const now = new Date();
+  DAYS.forEach((d, i) => {
+    const chip = document.querySelector(`.dchip[data-day="${i}"]`);
+    if(chip) chip.classList.toggle("today",
+      new Date(d.iso + "T12:00:00").toDateString() === now.toDateString());
+  });
+}
+
+function renderCountdown(){
+  const el = $("#countdown");
+  const start = new Date("2026-08-10T00:00:00");
+  const end = new Date("2026-08-17T23:59:59");
+  const now = new Date();
+  if(now < start){
+    const n = Math.ceil((start - now) / 864e5);
+    el.innerHTML = n <= 0 ? "The trip is here! &#9992;&#65039;" : `&#9992;&#65039; Trip starts in <b>${n}</b> ${n===1?"day":"days"}`;
+  } else if(now <= end){
+    el.innerHTML = `&#127956;&#65039; Day <b>${Math.floor((now - start)/864e5) + 1}</b> of 8 &mdash; enjoy Whitefish!`;
+  } else {
+    el.innerHTML = "That's a wrap &mdash; safe travels home! &#128075;";
+  }
+}
+
+/* ---------- interactions ---------- */
+function newDraft(){
+  return { title:"", time:"", meta:"", people:new Set(), sitters:new Set(), everyone:false, status:"", err:"" };
+}
+function captureInputs(){
+  if(!formDraft) return;
+  const t = $("#f-title"), tm = $("#f-time"), m = $("#f-meta");
+  if(t) formDraft.title = t.value;
+  if(tm) formDraft.time = tm.value;
+  if(m) formDraft.meta = m.value;
+}
+
+$("#editToggle").onclick = function(){
+  editMode = !editMode;
+  this.setAttribute("aria-pressed", editMode ? "true" : "false");
+  this.classList.toggle("primary", editMode);
+  this.lastChild.textContent = editMode ? " Done editing" : " Edit itinerary";
+  if(!editMode){ openForm = null; formDraft = null; }
+  render();
+};
+
+$("#resetBtn").onclick = function(){
+  if(!confirm("Remove all your added events and bring back everything you deleted?")) return;
+  state = { removed: [], added: [] };
+  save(); openForm = null; formDraft = null; render();
+};
+
+$("#days").addEventListener("click", function(e){
+  const el = e.target.closest("button");
+  if(!el) return;
+
+  if(el.dataset.remove){
+    if(!isRemoved(el.dataset.remove)) state.removed.push(el.dataset.remove);
+    save(); render(); return;
+  }
+  if(el.dataset.restore){
+    state.removed = state.removed.filter(x => x !== el.dataset.restore);
+    save(); render(); return;
+  }
+  if(el.dataset.add){
+    openForm = +el.dataset.add; formDraft = newDraft(); render();
+    const f = $("#f-title"); if(f) f.focus();
+    return;
+  }
+  if(el.dataset.cancel){ openForm = null; formDraft = null; render(); return; }
+
+  if(el.dataset.everyone){
+    captureInputs();
+    formDraft.everyone = !formDraft.everyone;
+    if(formDraft.everyone) formDraft.people.clear();
+    render(); return;
+  }
+  if(el.dataset.person){
+    captureInputs();
+    const p = el.dataset.person;
+    formDraft.people.has(p) ? formDraft.people.delete(p) : formDraft.people.add(p);
+    if(formDraft.people.size) formDraft.everyone = false;
+    render(); return;
+  }
+  if(el.dataset.sitter){
+    captureInputs();
+    const p = el.dataset.sitter;
+    formDraft.sitters.has(p) ? formDraft.sitters.delete(p) : formDraft.sitters.add(p);
+    render(); return;
+  }
+  if(el.dataset.status){
+    captureInputs();
+    formDraft.status = formDraft.status === el.dataset.status ? "" : el.dataset.status;
+    render(); return;
+  }
+
+  if(el.dataset.save){
+    captureInputs();
+    const di = +el.dataset.save;
+    if(!formDraft.title.trim()){
+      formDraft.err = "Give the event a name so everyone knows what it is.";
+      render(); $("#f-title").focus(); return;
+    }
+    state.added.push({
+      _id: "c:" + Date.now() + ":" + Math.random().toString(36).slice(2,7),
+      dayIso: DAYS[di].iso,
+      title: formDraft.title.trim(),
+      time: formDraft.time.trim() || "TBD",
+      meta: formDraft.meta.trim(),
+      everyone: formDraft.everyone,
+      people: [...formDraft.people],
+      sitters: [...formDraft.sitters],
+      booked: formDraft.status === "booked",
+      optional: formDraft.status === "optional"
+    });
+    save(); openForm = null; formDraft = null; render();
+  }
+});
+
+load();
+renderStorageWarn();
+renderFilters();
+renderDayNav();
+renderCountdown();
+render();
+</script>
+</body>
+</html>
